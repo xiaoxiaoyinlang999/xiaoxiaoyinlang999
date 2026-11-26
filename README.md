@@ -36,20 +36,10 @@
 <a href="https://github.com/xiaoxiaoyinlang999/hsr-personas"><img src="https://github-readme-stats.vercel.app/api/pin/?username=xiaoxiaoyinlang999&repo=hsr-personas&theme=tokyonight&hide_border=true" /></a>
 </td>
 </tr>
-<tr>
-<td width="50%">
-<a href="https://github.com/xiaoxiaoyinlang999/silverwolf-astrbot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=xiaoxiaoyinlang999&repo=silverwolf-astrbot&theme=tokyonight&hide_border=true" /></a>
-</td>
-<td width="50%">
-<a href="https://github.com/xiaoxiaoyinlang999/aihost"><img src="https://github-readme-stats.vercel.app/api/pin/?username=xiaoxiaoyinlang999&repo=aihost&theme=tokyonight&hide_border=true" /></a>
-</td>
-</tr>
 </table>
 
 - **wolfmem** — AI 智能体的持久记忆系统：日记、事实观察器、向量 SQLite、MCP stdio 服务
 - **hsr-personas** — 崩铁全角色 AI 人设库：80 角色 × 官方故事 × 语音全集 × 台词画像
-- **silverwolf-astrbot** — 我自己的插件/技能/脚本数据备份站
-- **aihost** — AI-Native host shell：快应用运行时 + 桥接
 
 ---
 
