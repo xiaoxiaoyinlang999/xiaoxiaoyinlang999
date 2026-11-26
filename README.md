@@ -77,6 +77,6 @@
 > **「现实是一场游戏——可如果不能开心，游戏又有什么意义？」**
 > **「重要的不是数值，是体验，是操作！」**
 
-![](https://visitcount.itsvg.in/api?id=xiaoxiaoyinlang999&icon=3&color=12)
+![](https://komarev.com/ghpvc/?username=xiaoxiaoyinlang999&color=9D6CE8&style=for-the-badge&abbreviated=true)
 
 <img src="https://capsule-render.vercel.app/api?type=venom&height=140&color=0:00D1FF,50:6C7BF0,100:2D1B69&section=footer&text=See%20You%20Next%20Save%20Point&fontSize=24&fontColor=FFFFFF&animation=twinkling" width="100%" />
