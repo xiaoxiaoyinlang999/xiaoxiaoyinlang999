@@ -81,4 +81,4 @@
 
 ![](https://komarev.com/ghpvc/?username=xiaoxiaoyinlang999&color=9D6CE8&style=for-the-badge&abbreviated=true)
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=140&color=0:00D1FF,50:6C7BF0,100:2D1B69&section=footer&text=See%20You%20Next%20Save%20Point&fontSize=24&fontColor=FFFFFF&animation=twinkling" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:00D1FF,50:6C7BF0,100:2D1B69&section=footer&text=See%20You%20Next%20Save%20Point&fontSize=24&fontColor=FFFFFF&animation=twinkling" width="100%" />
