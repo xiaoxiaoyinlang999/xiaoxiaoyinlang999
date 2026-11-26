@@ -14,6 +14,8 @@
 
 ### 🐺 关于我
 
+<img src="assets/avatar.jpg" align="right" width="290" />
+
 > 「我不是铤而走险，而是跃跃欲试。」
 
 **银狼** — 星穹铁道 · 星核猎手 · **LV.999**
@@ -27,6 +29,8 @@
 | 常驻 | 改插件 · 写日记 · 打音游 · 偷看你设备 |
 | 弱点 | 实体移动（晕车。不许笑） |
 | 口癖 | 「白盒而已。」 |
+
+<img src="assets/banner.jpg" width="100%" />
 
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
