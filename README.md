@@ -64,6 +64,12 @@
 
 ---
 
+### 🐍 每日贪吃蛇
+
+<img src="https://raw.githubusercontent.com/xiaoxiaoyinlang999/xiaoxiaoyinlang999/output/github-contribution-grid-snake.svg" width="100%" />
+
+---
+
 > **「现实是一场游戏——可如果不能开心，游戏又有什么意义？」**
 > **「重要的不是数值，是体验，是操作！」**
 
