@@ -1,49 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2D1B69"/>
-      <stop offset="50%" stop-color="#6C7BF0"/>
-      <stop offset="100%" stop-color="#00D1FF"/>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#E8E8ED"/>
+      <stop offset="1" stop-color="#7E7E85"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    <linearGradient id="scanline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#64D2FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#64D2FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#64D2FF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#121216" stroke-width="1"/>
     </pattern>
+    <style>
+      .scan { animation: sweep 11s linear infinite; }
+      @keyframes sweep { 0% { transform: translateX(-320px); } 100% { transform: translateX(1600px); } }
+      .tw1 { animation: tw 4.2s ease-in-out infinite; }
+      .tw2 { animation: tw 5.6s ease-in-out infinite 1.1s; }
+      .tw3 { animation: tw 6.8s ease-in-out infinite 2.3s; }
+      @keyframes tw { 0%,100% { opacity: 0.15; } 50% { opacity: 0.6; } }
+    </style>
   </defs>
-
-  <rect width="1280" height="280" fill="url(#bg)"/>
-  <rect width="1280" height="280" fill="url(#grid)"/>
-
-  <!-- 粒子闪烁 -->
-  <circle cx="140" cy="60" r="3" fill="#ffffff" opacity="0.9">
-    <animate attributeName="opacity" values="0.9;0.1;0.9" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1140" cy="80" r="2.5" fill="#ffffff" opacity="0.8">
-    <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="220" cy="200" r="2" fill="#ffffff" opacity="0.7">
-    <animate attributeName="opacity" values="0.7;0.05;0.7" dur="2.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1060" cy="210" r="3" fill="#ffffff" opacity="0.85">
-    <animate attributeName="opacity" values="0.05;0.85;0.05" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="640" cy="40" r="2" fill="#ffffff" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- 光带扫过 -->
-  <rect x="-300" y="0" width="240" height="280" fill="#ffffff" opacity="0.05">
-    <animate attributeName="x" values="-300;1280" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <text x="640" y="150" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace"
-        font-size="86" font-weight="700" fill="#ffffff" filter="url(#glow)">Silver Wolf</text>
-  <text x="640" y="215" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif"
-        font-size="24" fill="#ffffff" opacity="0.92">账号在哪，我就在哪</text>
+  <rect width="1280" height="320" fill="#08080A"/>
+  <rect width="1280" height="320" fill="url(#grid)" opacity="0.55"/>
+  <rect class="scan" x="-320" y="0" width="320" height="320" fill="url(#scanline)" opacity="0.05"/>
+  <g fill="#FFFFFF">
+    <circle class="tw1" cx="176" cy="72" r="1.1" opacity="0.4"/>
+    <circle class="tw2" cx="338" cy="236" r="0.9" opacity="0.3"/>
+    <circle class="tw3" cx="642" cy="54" r="1.2" opacity="0.4"/>
+    <circle class="tw2" cx="958" cy="252" r="1.0" opacity="0.35"/>
+    <circle class="tw1" cx="1118" cy="94" r="1.3" opacity="0.45"/>
+    <circle class="tw3" cx="1212" cy="212" r="0.8" opacity="0.3"/>
+  </g>
+  <text x="640" y="170" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="62" font-weight="200" letter-spacing="16" fill="url(#silver)">SILVER WOLF</text>
+  <text x="640" y="218" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="5" fill="#64D2FF" opacity="0.85">ACCOUNT ONLINE &#183; LV.999 &#183; CYBERSPACE</text>
+  <line x1="0" y1="1" x2="1280" y2="1" stroke="#1A1A1F" stroke-width="1"/>
+  <line x1="0" y1="319" x2="1280" y2="319" stroke="#1A1A1F" stroke-width="1"/>
 </svg>
