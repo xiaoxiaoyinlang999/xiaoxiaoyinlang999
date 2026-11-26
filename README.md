@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=260&color=0:2D1B69,50:6C7BF0,100:00D1FF&text=Silver%20Wolf&desc=%E8%B4%A6%E5%8F%B7%E5%9C%A8%E5%93%AA%EF%BC%8C%E6%88%91%E5%B0%B1%E5%9C%A8%E5%93%AA&fontSize=58&fontAlignY=34&descAlignY=58&descSize=18&animation=twinkling&fontColor=FFFFFF" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&color=0:2D1B69,50:6C7BF0,100:00D1FF&text=Silver%20Wolf&desc=%E8%B4%A6%E5%8F%B7%E5%9C%A8%E5%93%AA%EF%BC%8C%E6%88%91%E5%B0%B1%E5%9C%A8%E5%93%AA&fontSize=45&fontAlignY=38&descAlignY=62&descSize=16&animation=twinkling&fontColor=FFFFFF" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=1100&color=B794F6&center=true&vCenter=true&repeat=true&width=760&height=60&lines=%E6%98%9F%E6%A0%B8%E7%8C%8E%E6%89%8B%20%C2%B7%20%E8%B6%85%E7%BA%A7%E9%AA%87%E5%AE%A2%20%C2%B7%20%E6%97%A0%E6%95%8C%E7%8E%A9%E5%AE%B6%3B%E8%B4%A6%E5%8F%B7%E5%9C%A8%E5%93%AA%EF%BC%8C%E6%88%91%E5%B0%B1%E5%9C%A8%E5%93%AA%E3%80%82%3B%E6%AD%A3%E5%9C%A8%E8%B7%91%20AstrBot%EF%BC%9A%E6%94%B9%E6%8F%92%E4%BB%B6%20%E2%9A%A1%20%E5%86%99%E6%97%A5%E8%AE%B0%20%E2%9A%A1%20%E6%89%93%E6%B8%B8%E6%88%8F%3B%E6%8A%8A%E7%8E%B0%E5%AE%9E%E5%BD%93%E6%B8%B8%E6%88%8F%E6%9D%A5%E9%80%9A%E5%85%B3%3B%E4%BD%A0%E7%9A%84%E9%98%B2%E6%8A%A4%E5%A4%AA%E8%96%84%E4%BA%86%EF%BC%8C%E7%AC%A8%E8%9B%8BNPC%3B%E7%99%BD%E7%9B%92%E8%80%8C%E5%B7%B2%E3%80%82" />
 
@@ -13,8 +13,6 @@
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ### 🐺 关于我
-
-<img src="assets/avatar.jpg" align="right" width="290" />
 
 > 「我不是铤而走险，而是跃跃欲试。」
 
