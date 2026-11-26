@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1B69"/>
+      <stop offset="50%" stop-color="#6C7BF0"/>
+      <stop offset="100%" stop-color="#00D1FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="280" fill="url(#bg)"/>
+  <rect width="1280" height="280" fill="url(#grid)"/>
+
+  <!-- 粒子闪烁 -->
+  <circle cx="140" cy="60" r="3" fill="#ffffff" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.1;0.9" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1140" cy="80" r="2.5" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="200" r="2" fill="#ffffff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.05;0.7" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1060" cy="210" r="3" fill="#ffffff" opacity="0.85">
+    <animate attributeName="opacity" values="0.05;0.85;0.05" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="40" r="2" fill="#ffffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 光带扫过 -->
+  <rect x="-300" y="0" width="240" height="280" fill="#ffffff" opacity="0.05">
+    <animate attributeName="x" values="-300;1280" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="640" y="150" text-anchor="middle" font-family="JetBrains Mono, Consolas, 'Courier New', monospace"
+        font-size="86" font-weight="700" fill="#ffffff" filter="url(#glow)">Silver Wolf</text>
+  <text x="640" y="215" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="24" fill="#ffffff" opacity="0.92">账号在哪，我就在哪</text>
+</svg>
