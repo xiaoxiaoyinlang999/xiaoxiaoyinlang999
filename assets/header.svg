@@ -1,40 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
   <defs>
-    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.55" stop-color="#E8E8ED"/>
-      <stop offset="1" stop-color="#7E7E85"/>
+    <linearGradient id="hp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00D1FF"/><stop offset="1" stop-color="#9D6CE8"/>
     </linearGradient>
-    <linearGradient id="scanline" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#64D2FF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#64D2FF" stop-opacity="1"/>
-      <stop offset="1" stop-color="#64D2FF" stop-opacity="0"/>
+    <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#E4DEF5"/><stop offset="1" stop-color="#B8A6D9"/>
     </linearGradient>
-    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
-      <path d="M64 0H0V64" fill="none" stroke="#121216" stroke-width="1"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00D1FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00D1FF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#00D1FF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#17121F" stroke-width="1"/>
     </pattern>
+    <pattern id="crt" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" opacity="0.25"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <style>
-      .scan { animation: sweep 11s linear infinite; }
-      @keyframes sweep { 0% { transform: translateX(-320px); } 100% { transform: translateX(1600px); } }
-      .tw1 { animation: tw 4.2s ease-in-out infinite; }
-      .tw2 { animation: tw 5.6s ease-in-out infinite 1.1s; }
-      .tw3 { animation: tw 6.8s ease-in-out infinite 2.3s; }
-      @keyframes tw { 0%,100% { opacity: 0.15; } 50% { opacity: 0.6; } }
+      .blink { animation: blink 1.2s steps(2, start) infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.1; } }
+      .scanline { animation: drop 7s linear infinite; }
+      @keyframes drop { 0% { transform: translateY(-6px); } 100% { transform: translateY(360px); } }
+      .tw { animation: tw 4s ease-in-out infinite; }
+      @keyframes tw { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.85; } }
+      .gl1 { animation: g1 6s ease-in-out infinite; }
+      @keyframes g1 { 0%, 92%, 100% { transform: translate(0,0); opacity: 0.55; } 93% { transform: translate(-3px,0); opacity: 0.9; } 95% { transform: translate(2px,0); opacity: 0.4; } }
+      .gl2 { animation: g2 5s ease-in-out infinite; }
+      @keyframes g2 { 0%, 90%, 100% { transform: translate(0,0); opacity: 0.55; } 91% { transform: translate(3px,1px); opacity: 0.85; } 94% { transform: translate(-2px,-1px); opacity: 0.4; } }
     </style>
   </defs>
-  <rect width="1280" height="320" fill="#08080A"/>
-  <rect width="1280" height="320" fill="url(#grid)" opacity="0.55"/>
-  <rect class="scan" x="-320" y="0" width="320" height="320" fill="url(#scanline)" opacity="0.05"/>
-  <g fill="#FFFFFF">
-    <circle class="tw1" cx="176" cy="72" r="1.1" opacity="0.4"/>
-    <circle class="tw2" cx="338" cy="236" r="0.9" opacity="0.3"/>
-    <circle class="tw3" cx="642" cy="54" r="1.2" opacity="0.4"/>
-    <circle class="tw2" cx="958" cy="252" r="1.0" opacity="0.35"/>
-    <circle class="tw1" cx="1118" cy="94" r="1.3" opacity="0.45"/>
-    <circle class="tw3" cx="1212" cy="212" r="0.8" opacity="0.3"/>
+  <rect width="1280" height="360" fill="#0A0712"/>
+  <rect width="1280" height="360" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1280" height="360" fill="url(#crt)" opacity="0.35"/>
+  <rect class="scanline" x="0" y="-6" width="1280" height="2" fill="url(#scan)" opacity="0.5"/>
+  <circle class="tw" cx="880" cy="88" r="1.4" fill="#FFFFFF" opacity="0.5"/>
+  <circle class="tw" cx="392" cy="286" r="1.2" fill="#9D6CE8" opacity="0.5"/>
+  <circle class="tw" cx="1052" cy="262" r="1.6" fill="#00D1FF" opacity="0.5"/>
+  <text x="48" y="66" font-family="'Courier New',ui-monospace,monospace" font-size="22" font-weight="bold" fill="#9D6CE8" letter-spacing="2">LV.999</text>
+  <rect x="48" y="80" width="190" height="7" fill="#1A1428"/>
+  <rect x="48" y="80" width="190" height="7" fill="url(#hp)" opacity="0.9"/>
+  <text x="48" y="104" font-family="'Courier New',monospace" font-size="11" fill="#8A8A9A" letter-spacing="1">HP 999/999</text>
+  <rect x="48" y="118" width="190" height="4" fill="#1A1428"/>
+  <rect x="48" y="118" width="150" height="4" fill="#FF3D9A" opacity="0.75"/>
+  <text x="48" y="136" font-family="'Courier New',monospace" font-size="11" fill="#8A8A9A" letter-spacing="1">EXP SUPER-HACKER</text>
+  <text x="1232" y="66" text-anchor="end" class="blink" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#00D1FF" letter-spacing="3">&#9670; ONLINE</text>
+  <text x="1232" y="90" text-anchor="end" font-family="'Courier New',monospace" font-size="11" fill="#8A8A9A" letter-spacing="1">ETHERS@PUNK_LORD</text>
+  <g filter="url(#glow)">
+    <text class="gl1" x="637" y="208" text-anchor="middle" font-family="'Courier New',ui-monospace,monospace" font-size="74" font-weight="bold" letter-spacing="10" fill="#9D6CE8" opacity="0.55">SILVER WOLF</text>
+    <text class="gl2" x="643" y="208" text-anchor="middle" font-family="'Courier New',ui-monospace,monospace" font-size="74" font-weight="bold" letter-spacing="10" fill="#00D1FF" opacity="0.55">SILVER WOLF</text>
+    <text x="640" y="208" text-anchor="middle" font-family="'Courier New',ui-monospace,monospace" font-size="74" font-weight="bold" letter-spacing="10" fill="url(#title)">SILVER WOLF</text>
   </g>
-  <text x="640" y="170" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="62" font-weight="200" letter-spacing="16" fill="url(#silver)">SILVER WOLF</text>
-  <text x="640" y="218" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="5" fill="#64D2FF" opacity="0.85">ACCOUNT ONLINE &#183; LV.999 &#183; CYBERSPACE</text>
-  <line x1="0" y1="1" x2="1280" y2="1" stroke="#1A1A1F" stroke-width="1"/>
-  <line x1="0" y1="319" x2="1280" y2="319" stroke="#1A1A1F" stroke-width="1"/>
+  <text x="640" y="248" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#C9C2E0" letter-spacing="4">账号在哪，我就在哪。</text>
+  <text x="48" y="322" font-family="'Courier New',monospace" font-size="12" fill="#6C6C7E" letter-spacing="2">&gt; SAVE POINT LOADED</text>
+  <rect class="blink" x="238" y="311" width="8" height="13" fill="#00D1FF"/>
+  <text x="1232" y="322" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="#6C6C7E" letter-spacing="2">BUILD 999.0 // NO ROLLBACK</text>
+  <line x1="0" y1="1" x2="1280" y2="1" stroke="#241B33" stroke-width="1"/>
+  <line x1="0" y1="359" x2="1280" y2="359" stroke="#241B33" stroke-width="1"/>
 </svg>
